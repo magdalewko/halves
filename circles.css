@@ -1,0 +1,76 @@
+@font-face{
+	font-family:myPaduka;
+	src:url(paduka_script/PadukaScriptfree.ttf);
+}
+
+body{
+	background-image:url(peonyBlack.jpg);
+	background-repeat:repeat-x;
+	background-color:black;
+}
+
+#holder{
+	position:relative;
+	height:700px;
+	/*background-image:url(peony.png);
+	background-repeat:no-repeat;*/
+}
+
+.box{
+	float:left;
+	margin-top:150px;
+	margin-left:100px;
+	transform:rotate(-40deg);
+	width:200px;
+	height:200px;
+	
+	border-radius:200px;
+	background-color:transparent;
+	border:none;
+	
+}
+
+.circle{
+	position:absolute;
+	top:100;
+	width:200px;
+	height:200px;
+	
+	border-radius:200px;
+	background-color:#ff6699;/* pale pink*/
+	z-index:-1;
+	opacity:0.5;
+	font-family:myPaduka;
+	color:green;
+}
+
+.box .box1Right{
+	border:none;
+	background-color:#660033/*#ffcccc*/;
+	
+	width:100px;
+	height:200px;
+	border-radius:0 200px 200px 0;
+	opacity:0.3;
+	display:inline-block;
+	float:right;
+	z-index:1;
+}
+
+.box .box1Left{
+	
+	background-color:#660033;
+	width:100px;
+	height:200px;
+	border-radius:200px 0 0 200px;
+	opacity:0.3;
+	display:inline-block;
+	float:left;
+	z-index:1;
+}
+
+.header{
+	font-family:myPaduka;
+	size:2em;
+	color:#fff;
+}
