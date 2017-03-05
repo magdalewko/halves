@@ -4,8 +4,7 @@ function moveMe(circle){
 	//var boxy = document.getElementsByClassName("box");
 	var rightmoon = moon.getElementsByClassName("box1Right")[0];
 	var leftmoon = moon.getElementsByClassName("box1Left")[0];
-	var kernel = moon.getElementsByClassName("circle")[0];
-	
+	var kernel = moon.getElementsByClassName("circle")[0];	
 	kernel.style.width = "220px";
 	kernel.style.height = "220px";
 	//kernel.style.borderRadius = "240px";
@@ -24,8 +23,12 @@ function moveMe(circle){
 	leftmoon.style.transform = "translateY(60px)";
 	leftmoon.style.transform += "rotate(-60deg)";
 	leftmoon.style.webkitTransition = "all 0.4s ease-out";
+	
+	kernel.getElementsByTagName("p")[0].style.opacity="1";
+	kernel.style.opacity="0.5";
+	//kernel.innerHTML = document.getElementsByClassName("letters")[0].innerHTML;
+		
 }
-
 
 function moveMeOut(circle){
 	
@@ -53,4 +56,17 @@ function moveMeOut(circle){
 	leftmoon.style.transform = "translateY(-60px)";
 	leftmoon.style.transform += "rotate(60deg)";
 	leftmoon.style.webkitTransition = "all 0.4s ease-out";
+	//text styling
+	kernel.getElementsByTagName("p")[0].style.opacity="0";
+	//kernel.getElementsByTagName("p")[0].style.transform="rotate(45deg)";
+	kernel.style.width="150px";
+	kernel.style.height="150px";
+	kernel.style.borderRadius="200px";
+	kernel.style.opacity="0.2";
 }
+
+
+
+
+
+
