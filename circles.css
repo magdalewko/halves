@@ -26,8 +26,7 @@ body{
 	
 	border-radius:200px;
 	background-color:transparent;
-	border:none;
-	
+	border:none;	
 }
 
 .circle{
@@ -35,15 +34,24 @@ body{
 	top:100;
 	width:200px;
 	height:200px;
-	
+	overflow:hidden;
 	border-radius:200px;
 	background-color:#ff6699;/* pale pink*/
 	z-index:-1;
 	opacity:0.5;
-	font-family:myPaduka;
-	color:green;
 }
-
+.circle p{
+	font-family:Arial;
+	color:#fff;
+	overflow:hidden;
+	opacity:0;
+	filter:alpha(opacity=0);
+	padding:1.1em;
+	transform:rotate(55deg);
+	word-wrap:break-word;
+	text-align:right;
+}
+/* two halves */ 
 .box .box1Right{
 	border:none;
 	background-color:#660033/*#ffcccc*/;
@@ -69,8 +77,14 @@ body{
 	z-index:1;
 }
 
-.header{
-	font-family:myPaduka;
+.letters{
+	position:absolute;
+	top:6px;
+	width:100%;
+	border:1px solid green;
+	height:200px;
+	font-family:Arial;
 	size:2em;
 	color:#fff;
 }
+
